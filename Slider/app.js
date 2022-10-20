@@ -51,10 +51,7 @@ let index=0
 
 // display first item according to the index
 window.addEventListener("DOMContentLoaded",()=>{
-    userName.innerHTML=reviews[index].name
-    userJob.innerHTML=reviews[index].job
-    userDesciption.innerHTML=reviews[index].description
-    userImage.src=reviews[index].image
+    displayItems(index)
 
 })
 
