@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    font-size: 16px;
+    --orange:rgb(180, 125, 23);
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+
+}
+
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5% ;
+    color: white;
+}
+
+.margin{
+    margin: 10px;
+}
+
+.header .underLine{
+    width: 60px;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+
+.filterBTNS{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
+.filterBTNS button{
+    cursor:pointer;
+    margin: 0 5px;
+    border:2px solid var(--orange);
+    background-color: transparent;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: var(--orange);
+}
+
+
+/* article */
+
+.article{
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-between;
+
+}
+
+@media only screen and (max-width:1248px) {
+    .article{
+        width: 100vw !important;
+        padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food .details{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .food .foodImage{
+       
+        height: 70%;
+        margin-right: 7px;
+    }
+    .food{
+       align-items: center !important;
+
+    }
+}
+
+.article .food{
+    margin-bottom: 20px;
+    width: 500px;
+    height: 120px;
+    max-width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+}
+
+.food .image{
+    width: 100%;
+    height: 100%;   
+    border-radius: 10px; 
+    border: 1px solid var(--orange);
+}
+
+.foodImage{
+    width: 170px;
+    height: 100%;
+
+}
+
+.food .details{
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.details .top{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.top .price{
+    color: var(--orange);
+  
+}
+
+.details .bottom {
+    color: gray;
+}
+
+.none{
+    display: none !important;
+}
